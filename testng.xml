@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utilities.ExtentReportManager"/>
+    </listeners>
+    <test name="Test1">
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestCases.LoginTest"/>
+            <class name="TestCases.CheckSidemenuSelection"/>
+            <class name="TestCases.CheckSideMenuOptionsTest"/>
+            <class name="TestCases.AttachFileForPersonalDetailTest"/>
+            <class name="TestCases.AddNewUserAndCheckLogin"/>
+            <class name="TestCases.AddaNewUserTest"/>
+        </classes>
+    </test>
+
+   <!-- <test name="Test2">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="TestCases.LoginTest"/>
+            &lt;!&ndash;            <class name="TestCases.CheckSidemenuSelection"/>
+                        <class name="TestCases.CheckSideMenuOptionsTest"/>
+                        <class name="TestCases.AttachFileForPersonalDetailTest"/>
+                        <class name="TestCases.AddNewUserAndCheckLogin"/>
+                        <class name="TestCases.AddaNewUserTest"/>&ndash;&gt;
+        </classes>
+    </test>-->
+</suite>
