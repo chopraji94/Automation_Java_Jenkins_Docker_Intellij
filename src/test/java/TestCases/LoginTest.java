@@ -17,7 +17,7 @@ public class LoginTest extends BaseClass {
     @Test(priority = 2,dependsOnMethods = {"login"},groups = {"smoke"})
     public void checkUserOnDashBoardPage(){
         logger.info("----------------------checkUserOnDashBoardPage-----------------------");
-        boolean exist = header.checkIfUserIsOnSelctedPage("Dashboard");
+        boolean exist = header.checkIfUserIsOnSelctedPage("PIM");
         Assert.assertTrue(exist);
     }
 }

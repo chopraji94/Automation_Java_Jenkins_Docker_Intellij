@@ -28,7 +28,7 @@ import java.util.Properties;
 
 public class BaseClass {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     public Faker fake;
     public Properties properties;
     public static final Logger logger = LogManager.getLogger(BaseClass.class);
