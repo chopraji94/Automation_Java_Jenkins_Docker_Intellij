@@ -72,3 +72,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any questions or inquiries, please contact [chopraji94](https://github.com/chopraji94).
+Mail me at -: chopraji94@gamil.com
